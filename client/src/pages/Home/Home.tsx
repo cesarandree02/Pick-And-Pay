@@ -1,7 +1,16 @@
+import NavBar from "../../components/Navbar/NavBar"
+
 export default function Home() {
     return (
         <>
-            <div>Hi!!!</div>
+            <main className="bg-gray-custom">
+                <section>
+                    <NavBar />
+                </section>
+                <section>
+                    
+                </section>
+            </main>
         </>
     )
 }
