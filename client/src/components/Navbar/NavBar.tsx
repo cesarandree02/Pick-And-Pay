@@ -13,11 +13,11 @@ export default function NavBar() {
                         <input 
                             type="text" 
                             placeholder="Buscar Producto..."
-                            className="px-4 py-2 w-96 outline-none"
+                            className="font-outfit px-4 py-2 w-96 outline-none"
                         />
                     </div>
                     <div>
-                        <button className='cursor-pointer p-2'>
+                        <button className='cursor-pointer p-2 transition-transform duration-300 hover:scale-120'>
                             <img src={Carrito} alt="Icono de carrito" className="w-6 h-6" />
                         </button>
                     </div>
