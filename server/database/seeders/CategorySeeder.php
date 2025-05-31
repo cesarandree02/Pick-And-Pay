@@ -16,22 +16,26 @@ class CategorySeeder extends Seeder
         //
         DB::table('categories')->insert([
             [
-                'name' => 'Nieves',
-                'description' => 'Helado artesanal de textura suave y sabores tradicionales o exóticos',
+                'name' => 'Hamburguesas',
+                'description' => 'Deliciosa combinación de pan suave, carne o ingredientes al gusto y acompañamientos variados.',
                 'created_at' => now(),
-                'updated_at' => now()
+                'updated_at' => now(),
+                'image_url' => 'images/categories/hamburguesas.png',
             ],
             [
-                'name' => 'Bolis',
-                'description' => 'Congelados en bolsitas, perfectos para llevar y disfrutar en cualquier lugar',
+                'name' => 'Tacos',
+                'description' => 'Tortillas suaves o crujientes con rellenos tradicionales y salsas caseras.',
                 'created_at' => now(),
-                'updated_at' => now()
+                'updated_at' => now(),
+                'image_url' => 'images/categories/tacos.png',
+
             ],
             [
-                'name' => 'Paletas',
-                'description' => 'Helados en palito, hechos con frutas naturales, leche o agua',
+                'name' => 'Bebidas',
+                'description' => 'Refrescos, aguas frescas y jugos naturales para acompañar tu comida.',
                 'created_at' => now(),
-                'updated_at' => now()
+                'updated_at' => now(),
+                'image_url' => 'images/categories/bebidas.png',
             ],
         ]);
     }
