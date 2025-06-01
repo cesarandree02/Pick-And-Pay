@@ -21,7 +21,8 @@ class ProductSeeder extends Seeder
                 'price' => 100.00,
                 'category_id' => 1, // Hamburguesas
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),
+                'image_url' => '/images/products/hamburguers/classic.png',
             ],
             [
                 'name' => 'Hamburguesa BBQ',
@@ -29,7 +30,8 @@ class ProductSeeder extends Seeder
                 'price' => 120.00,
                 'category_id' => 1,
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),
+                'image_url' => '/images/products/hamburguers/classic.png',    
             ],
             [
                 'name' => 'Hamburguesa Doble',
@@ -37,7 +39,8 @@ class ProductSeeder extends Seeder
                 'price' => 150.00,
                 'category_id' => 1,
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),
+                'image_url' => '/images/products/hamburguers/classic.png',    
             ],
             [
                 'name' => 'Taco de Pastor',
@@ -45,7 +48,9 @@ class ProductSeeder extends Seeder
                 'price' => 30.00,
                 'category_id' => 2, // Tacos
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),
+                'image_url' => '/images/products/tacos/pastor.png',    
+    
             ],
             [
                 'name' => 'Taco de Asada',
@@ -53,7 +58,8 @@ class ProductSeeder extends Seeder
                 'price' => 30.00,
                 'category_id' => 2,
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),
+                'image_url' => '/images/products/tacos/pastor.png',    
             ],
             [
                 'name' => 'Taco Vegetariano',
@@ -61,7 +67,8 @@ class ProductSeeder extends Seeder
                 'price' => 30.00,
                 'category_id' => 2,
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),
+                'image_url' => '/images/products/tacos/pastor.png',    
             ],
             [
                 'name' => 'Agua de Horchata o Jamaica',
@@ -69,7 +76,8 @@ class ProductSeeder extends Seeder
                 'price' => 25.00,
                 'category_id' => 3, // Bebidas
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),   
+                'image_url' => '/images/products/beverages/soda.png',    
             ],
             [
                 'name' => 'Sodas',
@@ -77,7 +85,8 @@ class ProductSeeder extends Seeder
                 'price' => 25.00,
                 'category_id' => 3,
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),    
+                'image_url' => '/images/products/beverages/soda.png',    
             ],
             [
                 'name' => 'Agua Natural',
@@ -85,7 +94,8 @@ class ProductSeeder extends Seeder
                 'price' => 15.00,
                 'category_id' => 3,
                 'created_at' => now(),
-                'updated_at' => now()    
+                'updated_at' => now(),    
+                'image_url' => '/images/products/beverages/soda.png',    
             ],
         ]);
     }

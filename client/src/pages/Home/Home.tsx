@@ -1,5 +1,5 @@
 import NavBar from "../../components/Navbar/NavBar"
-import Product from "../../components/Product/Product"
+import Categories from "../../components/Categories/Categories"
 
 export default function Home() {
     return (
@@ -9,7 +9,7 @@ export default function Home() {
                     <NavBar />
                 </section>
                 <section>
-                    <Product />
+                    <Categories />
                 </section>
             </main>
         </>

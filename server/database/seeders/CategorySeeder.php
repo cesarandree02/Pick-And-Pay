@@ -20,14 +20,14 @@ class CategorySeeder extends Seeder
                 'description' => 'Deliciosa combinación de pan suave, carne o ingredientes al gusto y acompañamientos variados.',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'image_url' => 'images/categories/hamburguesas.png',
+                'image_url' => '/images/categories/hamburguesas.png',
             ],
             [
                 'name' => 'Tacos',
                 'description' => 'Tortillas suaves o crujientes con rellenos tradicionales y salsas caseras.',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'image_url' => 'images/categories/tacos.png',
+                'image_url' => '/images/categories/tacos.png',
 
             ],
             [
@@ -35,7 +35,7 @@ class CategorySeeder extends Seeder
                 'description' => 'Refrescos, aguas frescas y jugos naturales para acompañar tu comida.',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'image_url' => 'images/categories/bebidas.png',
+                'image_url' => '/images/categories/bebidas.png',
             ],
         ]);
     }
