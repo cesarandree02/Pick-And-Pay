@@ -8,7 +8,7 @@ export default function Home() {
                 <section>
                     <NavBar />
                 </section>
-                <section>
+                <section className="font-outfit">
                     <Categories />
                 </section>
             </main>

@@ -22,7 +22,7 @@ export default function Products() {
     }, []);
 
     function handleClick(id: number) {
-        navigate(`/product/${id}`);
+        navigate(`/categories/${categoryId}/products/${id}`);
     }
     
     return (
@@ -31,14 +31,14 @@ export default function Products() {
                 <div className="flex justify-center items-center">
                     <h2 className="font-outfit font-bold text-2xl">Elige Un Producto</h2>
                 </div>
-                <div className="flex justify-center items-center p-5 gap-10">
+                <div className="flex justify-center items-center p-5 gap-10 font-outfit">
                     {products.map((product) => (
                         <div key={product.id} className="flex flex-col gap-y-0.5">
                             <div onClick={() => handleClick(product.id)} className="bg-white rounded-xl flex justify-center items-center w-25 h-25 hover:cursor-pointer">
                                 <img className="w-20 h-20 transition duration-300 transform hover:scale-110" src={product.image_url} alt={`Logo ${product.name}`} />
                             </div>
                             <div className="flex justify-center items-center">
-                                <h4 className="text-sm text-center ">{product.name}</h4>
+                                <h4 className="text-sm text-center">{product.name}</h4>
                             </div>
                         </div>
                     ))}

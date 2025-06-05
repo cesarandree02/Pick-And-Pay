@@ -13,5 +13,5 @@ Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/categories/{categoryId}/products', [ProductController::class, 'getByCategory']);
-Route::get('/categories/{categoryId}/product/{productId}', [ProductController::class, 'getProductFromCategory']);
+Route::get('/categories/{categoryId}/products/{productId}', [ProductController::class, 'getProductFromCategory']);
 

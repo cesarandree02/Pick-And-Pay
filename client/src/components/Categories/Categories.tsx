@@ -28,7 +28,7 @@ export default function Categories() {
         <>
             <div className="p-5">
                 <div className="flex justify-center items-center">
-                    <h2 className="font-outfit font-bold text-2xl">Elige Un Tipo De Producto</h2>
+                    <h2 className="font-bold text-2xl">Elige Un Tipo De Producto</h2>
                 </div>
                 <div className="flex justify-center items-center p-5 gap-10">
                     {categories.map((category) => (
