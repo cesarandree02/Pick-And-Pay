@@ -15,3 +15,7 @@ Route::get('/products', [ProductController::class, 'index']);
 Route::get('/categories/{categoryId}/products', [ProductController::class, 'getByCategory']);
 Route::get('/categories/{categoryId}/products/{productId}', [ProductController::class, 'getProductFromCategory']);
 
+Route::post('/tokens/create', function (Request $request) {
+    $token = $request->user()->createToken($request->token_name);
+    return ['token' => $token->plainTextToken];
+});

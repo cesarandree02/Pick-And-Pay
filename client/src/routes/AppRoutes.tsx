@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import ProductsMenu from '../pages/ProductsMenu/ProductsMenu';
 import ProductInfo from '../pages/ProductInfo/ProductInfo';
+import Login from '../pages/Login/Login';
 
 export default function AppRoutes() {
     return (
@@ -11,6 +12,7 @@ export default function AppRoutes() {
             <Route path='/home' element={<Home />} />
             <Route path='/categories/:categoryId/products' element={<ProductsMenu />} />
             <Route path='/categories/:categoryId/products/:productId' element={<ProductInfo />} />
+            <Route path='/login' element={<Login />} />
         </Routes>
     )
 }

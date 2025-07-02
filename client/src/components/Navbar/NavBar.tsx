@@ -1,14 +1,22 @@
+import { useNavigate } from 'react-router-dom'
+import { checkUserAndRedirect } from '../../utils/authHelper'
+
 import Lupa from '../../assets/icons/Lupa.png'
 import Carrito from '../../assets/icons/Carrito.png'
 import Home from '../../assets/icons/Home.png'
-import { useNavigate } from 'react-router-dom'
+import Profile from '../../assets/icons/Profile.png'
 
 export default function NavBar() {
     const navigate = useNavigate();
 
-    function handleClickHome() {
+    function handleClickHome(): void {
         navigate('/home');
     }
+
+    function handleClickProfile(): void {
+        checkUserAndRedirect(navigate);
+    }
+    
     
     return (
         <>
@@ -32,6 +40,11 @@ export default function NavBar() {
                     <div>
                         <button className='cursor-pointer p-2 transition-transform duration-300 hover:scale-120'>
                             <img src={Carrito} alt="Icono de carrito" className="w-6 h-6" />
+                        </button>
+                    </div>
+                    <div>
+                        <button onClick={handleClickProfile} className='cursor-pointer p-2 transition-transform duration-300 hover:scale-120'>
+                            <img src={Profile} alt="Icono de perfil" className="w-7 h-7" />
                         </button>
                     </div>
                 </div>
