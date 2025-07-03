@@ -29,7 +29,7 @@ export async function checkUserAndRedirect(navigate: NavigateFunction): Promise<
         if (user.role === 'admin') {
             navigate('/admin');
         } else {
-            navigate('/profile');
+            navigate('/homeee');
         }
     } catch (error) {
         console.error('Error al autenticar al usuario:', error);
